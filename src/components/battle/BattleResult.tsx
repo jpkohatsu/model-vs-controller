@@ -18,7 +18,7 @@ export const BattleResult: React.FC = () => {
 
           {winner === "tie" ? (
             <div className="text-2xl font-bold text-yellow-600 mb-4">
-              🤝 IT'S A TIE!
+              🤝 IT IS A TIE!
             </div>
           ) : (
             <div
