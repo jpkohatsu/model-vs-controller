@@ -1,3 +1,52 @@
+# Model vs Controller 🦸‍♂️⚔️
+
+The Ultimate 3v3 Superhero Battle Simulator
+
+## Getting Started
+
+1. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+2. Run the development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## How to Play
+
+1. 🔍 **Search Heroes**: Find your favorite superheroes
+2. 👥 **Build Teams**: Add 3 fighters to each team
+3. ⚔️ **Battle**: Watch the epic showdown unfold!
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+- Context API for state management
+
+## Features
+
+- Real-time character search
+- Relevant fighter details
+- Ability to add/remove characters from your team
+- Battle calculations
+- Team battle results
+
+## Notes/Improvements
+
+- API integration using SuperHero instead of using mock data via access token
+- Random team generator should have added
+- Shareable battle links?
+- Test coverage!
+
+\`\`\`
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
