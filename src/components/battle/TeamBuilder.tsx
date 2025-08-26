@@ -276,48 +276,6 @@ export const TeamBuilder: React.FC = () => {
                       : "⏳ Building"}
                   </div>
                 </div>
-
-                {/* Team Power Display */}
-                {state.teamB.fighters.length > 0 && (
-                  <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-red-200/50 shadow-md">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-sm font-medium text-red-800">
-                        Team Power
-                      </span>
-                      <span className="text-2xl font-bold text-red-600">
-                        {teamBPower}
-                      </span>
-                    </div>
-
-                    {/* Power Stats Visualization */}
-                    {teamBStats && (
-                      <div className="grid grid-cols-3 gap-2 text-xs">
-                        {Object.entries(teamBStats.stats).map(
-                          ([stat, value]) => (
-                            <div key={stat} className="text-center">
-                              <div className="text-red-700 font-medium capitalize">
-                                {stat.slice(0, 3)}
-                              </div>
-                              <div className="w-full bg-red-100 rounded-full h-2 mt-1">
-                                <div
-                                  className="bg-gradient-to-r from-red-400 to-red-600 h-2 rounded-full transition-all duration-500"
-                                  style={{
-                                    width: `${
-                                      (value / teamBStats.maxStat) * 100
-                                    }%`,
-                                  }}
-                                ></div>
-                              </div>
-                              <div className="text-red-600 font-bold mt-1">
-                                {value}
-                              </div>
-                            </div>
-                          )
-                        )}
-                      </div>
-                    )}
-                  </div>
-                )}
               </div>
 
               {/* Team B Slots */}
