@@ -32,11 +32,9 @@ export const HeroCard: React.FC<HeroCardProps> = ({
       <div className="p-4">
         <h3 className="font-bold text-lg text-gray-800">{hero.name}</h3>
         <p className="text-sm text-gray-600 mb-2">{hero.biography.fullName}</p>
-        <p className="text-xs text-purple-600 mb-3">
-          {hero.biography.publisher}
-        </p>
+        <p className="text-xs text-gray-600 mb-3">{hero.biography.publisher}</p>
 
-        <div className="grid grid-cols-2 gap-2 text-xs mb-4">
+        <div className="grid grid-cols-2 gap-2 text-gray-600 text-xs mb-4">
           <div>
             STR: <span className="font-bold">{hero.powerstats.strength}</span>
           </div>

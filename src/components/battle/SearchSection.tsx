@@ -223,7 +223,7 @@ export const SearchSection: React.FC = () => {
             <button
               key={term}
               onClick={() => setSearchTerm(term)}
-              className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs hover:bg-purple-200 transition-colors"
+              className="px-3 py-1 bg-purple-100 text-gray-700 rounded-full text-xs hover:bg-purple-200 transition-colors"
             >
               {term}
             </button>
@@ -253,7 +253,7 @@ export const SearchSection: React.FC = () => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-700 text-sm"
             >
               <option value="name">Name (A-Z)</option>
               <option value="power">Total Power</option>
@@ -271,7 +271,7 @@ export const SearchSection: React.FC = () => {
             <select
               value={filterBy}
               onChange={(e) => setFilterBy(e.target.value as FilterOption)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-700 text-sm"
             >
               <option value="all">All Publishers</option>
               <option value="marvel">Marvel Comics</option>
